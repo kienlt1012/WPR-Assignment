@@ -1,0 +1,239 @@
+@media all{
+}
+
+article {
+    margin:0 auto;
+    max-width: 700px;
+}
+
+body {
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    text-decoration-color: #222222;
+    /* margin-top: 500px; */
+}
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #ee3322;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+     flex-grow: 1;
+}
+
+header {
+    display: flex;
+    border: 1px solid #ccc;
+    height: 80px;
+}
+
+
+header div,
+header div span,
+header h1 {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+}
+
+header div {
+    /* justify-content: flex-end; */
+    margin-right: 3px;
+}
+
+header span{
+    border-radius: 100%;
+    background-color: #ffee00;
+    font-weight: bold;
+    align-items: center;
+    transform: rotate(-30deg);
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin-left: 4px;
+
+}
+
+.answer:hover{
+    background-color:#dddddd;
+}
+
+
+.question {
+    margin-bottom: 36px;
+}
+#result-box {
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-top: 50px;
+    border-style: solid ;
+    border-color: #dcdcdc;
+    border-width: 1px;
+}
+#result {
+    font-size: 35px;
+    font-weight: bolder ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#score, #review-text {
+    padding-bottom: 15px;
+}
+#review-text{
+    padding-top: 20px;
+}
+#score{
+    font-size: 24px;
+}
+#Percent{
+    font-size: 16px;
+    font-weight: bold;
+}
+#try-again {
+    padding-top: 15px;
+}
+.submit {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding-top: 30px;
+}
+#sub-button {
+    color: white;
+    background-color: #4caf50;
+}
+#sub-button:hover{
+    background-color: #46a049;
+}
+
+#quiz-name{
+    background-image: url(./images/background.jpg);
+    height: 425px;
+    background-size: 700px 425px;
+    display: flex;
+    align-items: center;
+}
+#quiz-name h1{
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Pangolin','Trebuchet MS', cursive;
+    font-size: 60px;
+    color: black;
+    display: flex;
+    text-align: center;
+    max-width: 75%;
+    align-self: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+#author {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    text-align: center;
+}
+#the-test    {
+font-size: larger;
+font-weight: bolder;
+}
+#count {
+    font-size: larger;
+font-weight: bolder;
+
+}
+
+text {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.start {
+    text-align: center;
+    background-color: #dddddd;
+    margin-bottom: 36px;
+    
+
+}
+#start-quiz {
+    font-weight: bolder;
+    font-size: larger;
+  margin-bottom: 36px;
+  padding-top: 36px;
+  
+}
+#good-luck {
+    margin-bottom: 36px;
+
+}
+button {
+    border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color:#2196F3;
+  margin-bottom: 36px;
+}
+button:hover{
+    background-color: #46a490;
+}
+.answer {
+    margin: 1px;
+    height: 35px;
+    padding-top: 15px;
+    display: flex;
+    position: relative;
+}
+input{
+    position: relative;
+}
+.isCorrect{
+    background-color: #d4edda !important;
+}
+.isWrong{
+    background-color: #f8d7da !important;
+}
+.label-checked, .your-answer{
+    position: absolute;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    right: 5px;
+}
+.label-checked{
+    width: 145px;
+}
+.your-answer{
+    width: 115px;
+}
+.hidden{
+    display: none !important;
+}
+.answer span{
+    position: absolute;
+}
+.answer p{
+    display: inline;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+}
+span{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #f1f1f1;
+}
+input[type=radio]:checked ~ span{
+    background-color: #ddd !important;
+}
+.CorrectAnswer{
+    background-color: #ddd;
+}
+
+
